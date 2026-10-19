@@ -5,9 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#123b3a">
-  <meta name="description" content="رزومه و صفحه شخصی محمد قربانی پسیخانی؛ کارشناس مهندسی منابع طبیعی شیلات، تکثیر و پرورش آبزیان، دارای سوابق فعالیت در پرورش ماهی و کشاورزی تلفیقی.">
+
+  <meta name="description" content="رزومه و صفحه شخصی محمد قربانی پسیخانی؛ کارشناس مهندسی منابع طبیعی شیلات، تکثیر و پرورش آبزیان.">
+
   <meta name="robots" content="index, follow">
   <meta name="google-site-verification" content="Hwa3oeSRRPStQAg-f00KaW88wU0ErEOh5DmtoQCwosg">
+
   <title>محمد قربانی پسیخانی | رزومه و سوابق حرفه‌ای</title>
 
   <style>
@@ -21,9 +24,13 @@
       --line: #dce6e2;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       margin: 0;
@@ -33,19 +40,36 @@
       background: var(--bg);
     }
 
-    a { color: inherit; }
+    a {
+      color: inherit;
+    }
 
     .hero {
       background: linear-gradient(135deg, #0c2d2d, #1e6660);
       color: white;
-      padding: 48px 18px 40px;
+      padding: 35px 18px 40px;
       text-align: center;
       border-bottom: 5px solid var(--gold);
     }
 
-    .hero-inner, main, footer {
+    .hero-inner,
+    main,
+    footer {
       width: min(100% - 28px, 980px);
       margin: auto;
+    }
+
+    /* عکس پروفایل در بالای سایت */
+    .profile-photo {
+      display: block;
+      width: 180px;
+      height: auto;
+      max-height: 260px;
+      object-fit: contain;
+      margin: 0 auto 18px;
+      border: 3px solid var(--gold);
+      border-radius: 8px;
+      background: white;
     }
 
     .hero h1 {
@@ -92,7 +116,9 @@
       text-decoration: underline;
     }
 
-    main { padding: 24px 0 36px; }
+    main {
+      padding: 24px 0 36px;
+    }
 
     section {
       background: white;
@@ -117,9 +143,13 @@
       font-size: 1.05rem;
     }
 
-    p { margin: 8px 0; }
+    p {
+      margin: 8px 0;
+    }
 
-    .intro { font-size: 1.03rem; }
+    .intro {
+      font-size: 1.03rem;
+    }
 
     .facts {
       display: grid;
@@ -127,7 +157,8 @@
       gap: 12px;
     }
 
-    .fact, .item {
+    .fact,
+    .item {
       background: #f7faf8;
       border: 1px solid var(--line);
       border-radius: 12px;
@@ -140,18 +171,25 @@
       display: block;
     }
 
-    .value { font-weight: bold; }
+    .value {
+      font-weight: bold;
+    }
 
     .timeline {
       display: grid;
       gap: 12px;
     }
 
-    .item p { margin-bottom: 0; }
+    .item p {
+      margin-bottom: 0;
+    }
 
     .docs {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+      grid-template-columns: repeat(
+        auto-fit,
+        minmax(min(100%, 280px), 1fr)
+      );
       gap: 16px;
     }
 
@@ -173,7 +211,9 @@
       border-radius: 7px;
     }
 
-    figcaption { padding: 10px 3px 2px; }
+    figcaption {
+      padding: 10px 3px 2px;
+    }
 
     figcaption strong {
       display: block;
@@ -193,9 +233,22 @@
     }
 
     @media (max-width: 520px) {
-      .hero { padding-top: 34px; }
-      section { border-radius: 12px; }
-      nav .links { gap: 7px 12px; }
+      .hero {
+        padding-top: 28px;
+      }
+
+      .profile-photo {
+        width: 150px;
+        max-height: 230px;
+      }
+
+      section {
+        border-radius: 12px;
+      }
+
+      nav .links {
+        gap: 7px 12px;
+      }
     }
   </style>
 </head>
@@ -204,10 +257,20 @@
 
   <header class="hero">
     <div class="hero-inner">
+
+      <img
+        src="profile.jpg"
+        alt="عکس محمد قربانی پسیخانی"
+        class="profile-photo">
+
       <h1>محمد قربانی پسیخانی</h1>
+
       <p>کارشناس مهندسی منابع طبیعی ـ شیلات، تکثیر و پرورش آبزیان</p>
+
       <p>رزومه، سوابق کاری، آموزش‌ها و افتخارات حرفه‌ای</p>
+
       <span class="tag">صفحه شخصی و رزومه حرفه‌ای</span>
+
     </div>
   </header>
 
@@ -235,6 +298,7 @@
       </p>
 
       <div class="facts">
+
         <div class="fact">
           <span class="label">حوزه تخصصی</span>
           <span class="value">شیلات و آبزی‌پروری</span>
@@ -249,6 +313,7 @@
           <span class="label">زمینه فعالیت</span>
           <span class="value">پرورش ماهی و کشاورزی تلفیقی</span>
         </div>
+
       </div>
     </section>
 
@@ -259,7 +324,9 @@
 
         <article class="item">
           <h3>کارشناسی مهندسی منابع طبیعی ـ شیلات</h3>
+
           <p>گرایش تکثیر و پرورش آبزیان — دانشگاه پیام نور، مرکز رشت</p>
+
           <p>پایان تحصیلات: ۱۳۹۵ | معدل کل: ۱۴٫۶۴</p>
 
           <figure style="margin-top:12px">
@@ -267,6 +334,7 @@
               src="govaahi-payan-tahsileat-shilat.jpg"
               alt="گواهی پایان تحصیلات کارشناسی شیلات محمد قربانی پسیخانی"
               loading="lazy">
+
             <figcaption>
               <strong>گواهی موقت پایان تحصیلات کارشناسی</strong>
               <span>دانشگاه پیام نور مرکز رشت</span>
@@ -276,6 +344,7 @@
 
         <article class="item">
           <h3>فوق‌دیپلم صنایع نساجی — ۱۳۸۱</h3>
+
           <p>
             مدرک فوق‌دیپلم صنایع نساجی در سوابق تحصیلی درج شده است.
             تصویر این مدرک در میان عکس‌های ارسالی موجود نبود.
@@ -292,6 +361,7 @@
 
         <article class="item">
           <h3>فعالیت در پرورش ماهی</h3>
+
           <p>
             تجربه عملی در امور پرورش و نگهداری ماهیان گرمابی و
             کارهای روزمره مرتبط با استخر پرورش ماهی.
@@ -300,6 +370,7 @@
 
         <article class="item">
           <h3>کشاورزی تلفیقی و آبزی‌پروری</h3>
+
           <p>
             مشارکت در فعالیت‌های مربوط به ایجاد و مدیریت محصولات
             باغی تلفیقی با آبزی‌پروری و ترویج تجربه‌های کشاورزی تلفیقی.
@@ -315,9 +386,11 @@
       <div class="docs">
 
         <figure>
-          <img src="govaahi-icdl.jpg"
-               alt="گواهینامه مهارت فناوری اطلاعات ICDL درجه دو"
-               loading="lazy">
+          <img
+            src="govaahi-icdl.jpg"
+            alt="گواهینامه مهارت فناوری اطلاعات ICDL درجه دو"
+            loading="lazy">
+
           <figcaption>
             <strong>مهارت فناوری اطلاعات (ICDL درجه ۲)</strong>
             <span>سازمان آموزش فنی و حرفه‌ای کشور</span>
@@ -325,9 +398,11 @@
         </figure>
 
         <figure>
-          <img src="govaahi-komak-avaliyeh.jpg"
-               alt="گواهی دوره آموزش عمومی کمک‌های اولیه"
-               loading="lazy">
+          <img
+            src="govaahi-komak-avaliyeh.jpg"
+            alt="گواهی دوره آموزش عمومی کمک‌های اولیه"
+            loading="lazy">
+
           <figcaption>
             <strong>کمک‌های اولیه و مراقبت‌های اولیه</strong>
             <span>دوره آموزشی ۱۲۰ ساعته — رشت</span>
@@ -335,9 +410,11 @@
         </figure>
 
         <figure>
-          <img src="govaahi-hamgam-ba-keshavarz.jpg"
-               alt="گواهینامه طرح بسیج همگام با کشاورز"
-               loading="lazy">
+          <img
+            src="govaahi-hamgam-ba-keshavarz.jpg"
+            alt="گواهینامه طرح بسیج همگام با کشاورز"
+            loading="lazy">
+
           <figcaption>
             <strong>طرح بسیج همگام با کشاورز</strong>
             <span>دوره آموزشی — استان اردبیل، ۱۳۹۵</span>
@@ -345,9 +422,11 @@
         </figure>
 
         <figure>
-          <img src="govaahi-padafand-gheyramel.jpg"
-               alt="گواهینامه آموزشی پدافند غیرعامل"
-               loading="lazy">
+          <img
+            src="govaahi-padafand-gheyramel.jpg"
+            alt="گواهینامه آموزشی پدافند غیرعامل"
+            loading="lazy">
+
           <figcaption>
             <strong>پدافند غیرعامل</strong>
             <span>دوره آموزشی بسیج — خرداد ۱۳۹۶</span>
@@ -363,9 +442,11 @@
       <div class="docs">
 
         <figure>
-          <img src="lohe-abzi-parvari.jpg"
-               alt="لوح تقدیر فعالیت در مزرعه الگویی کشاورزی تلفیقی"
-               loading="lazy">
+          <img
+            src="lohe-abzi-parvari.jpg"
+            alt="لوح تقدیر فعالیت در مزرعه الگویی کشاورزی تلفیقی"
+            loading="lazy">
+
           <figcaption>
             <strong>تقدیر بابت فعالیت در مزرعه الگویی کشاورزی تلفیقی</strong>
             <span>راه‌اندازی مزرعه الگویی بر مبنای آبزی‌پروری</span>
@@ -373,9 +454,11 @@
         </figure>
 
         <figure>
-          <img src="lohe-jahad-keshavarzi.jpg"
-               alt="تقدیرنامه سازمان جهاد کشاورزی استان گیلان"
-               loading="lazy">
+          <img
+            src="lohe-jahad-keshavarzi.jpg"
+            alt="تقدیرنامه سازمان جهاد کشاورزی استان گیلان"
+            loading="lazy">
+
           <figcaption>
             <strong>تقدیرنامه جهاد کشاورزی استان گیلان</strong>
             <span>قدردانی از فعالیت‌ها و مشارکت حرفه‌ای</span>
@@ -383,9 +466,11 @@
         </figure>
 
         <figure>
-          <img src="lohe-karafarin-nemuneh.jpg"
-               alt="لوح تقدیر کارآفرین نمونه در کشاورزی تلفیقی"
-               loading="lazy">
+          <img
+            src="lohe-karafarin-nemuneh.jpg"
+            alt="لوح تقدیر کارآفرین نمونه در کشاورزی تلفیقی"
+            loading="lazy">
+
           <figcaption>
             <strong>کارآفرین نمونه</strong>
             <span>تقدیر بابت فعالیت در محصولات باغی تلفیقی با آبزی‌پروری — ۱۳۹۶</span>
