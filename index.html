@@ -5,486 +5,631 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#123b3a">
-
-  <meta name="description" content="رزومه و صفحه شخصی محمد قربانی پسیخانی؛ کارشناس مهندسی منابع طبیعی شیلات، تکثیر و پرورش آبزیان.">
-
+  <meta name="description" content="رزومه محمد قربانی پسیخانی؛ سوابق کاری، تحصیلات، گواهینامه‌ها و افتخارات حرفه‌ای.">
   <meta name="robots" content="index, follow">
   <meta name="google-site-verification" content="Hwa3oeSRRPStQAg-f00KaW88wU0ErEOh5DmtoQCwosg">
-
+  <link rel="canonical" href="https://mghorbani-pasikhani.github.io/">
   <title>محمد قربانی پسیخانی | رزومه و سوابق حرفه‌ای</title>
 
   <style>
     :root {
-      --deep: #123b3a;
-      --teal: #1e6660;
-      --gold: #c69b4c;
-      --ink: #263635;
-      --muted: #63716f;
-      --bg: #f1f5f3;
-      --line: #dce6e2;
+      --deep:#123b3a; --teal:#1e6660; --gold:#c69b4c;
+      --ink:#263635; --muted:#63716f; --bg:#f1f5f3; --line:#dce6e2;
     }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
     body {
-      margin: 0;
-      font-family: Tahoma, Arial, sans-serif;
-      line-height: 1.9;
-      color: var(--ink);
-      background: var(--bg);
+      margin:0; font-family:Tahoma,Arial,sans-serif;
+      line-height:1.9; color:var(--ink); background:var(--bg);
     }
-
-    a {
-      color: inherit;
-    }
-
+    a { color:inherit; }
+    button,input,select { font:inherit; }
+    button { cursor:pointer; }
     .hero {
-      background: linear-gradient(135deg, #0c2d2d, #1e6660);
-      color: white;
-      padding: 35px 18px 40px;
-      text-align: center;
-      border-bottom: 5px solid var(--gold);
+      background:linear-gradient(135deg,#0c2d2d,#1e6660);
+      color:white; padding:35px 18px 40px; text-align:center;
+      border-bottom:5px solid var(--gold);
     }
-
-    .hero-inner,
-    main,
-    footer {
-      width: min(100% - 28px, 980px);
-      margin: auto;
-    }
-
-    /* عکس پروفایل در بالای سایت */
+    .hero-inner,main,footer { width:min(100% - 28px,980px); margin:auto; }
     .profile-photo {
-      display: block;
-      width: 180px;
-      height: auto;
-      max-height: 260px;
-      object-fit: contain;
-      margin: 0 auto 18px;
-      border: 3px solid var(--gold);
-      border-radius: 8px;
-      background: white;
+      display:block; width:180px; height:auto; max-height:260px;
+      object-fit:contain; margin:0 auto 18px; border:3px solid var(--gold);
+      border-radius:8px; background:white;
     }
-
-    .hero h1 {
-      margin: 0 0 8px;
-      font-size: clamp(1.8rem, 5vw, 2.7rem);
-    }
-
-    .hero p {
-      margin: 5px auto;
-      max-width: 760px;
-      color: #e0efeb;
-    }
-
+    .hero h1 { margin:0 0 8px; font-size:clamp(1.8rem,5vw,2.7rem); }
+    .hero p { margin:5px auto; max-width:760px; color:#e0efeb; }
     .tag {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 5px 14px;
-      border: 1px solid #ffffff70;
-      border-radius: 999px;
-      font-size: .9rem;
+      display:inline-block; margin-top:15px; padding:5px 14px;
+      border:1px solid #ffffff70; border-radius:999px; font-size:.9rem;
     }
-
-    nav {
-      background: white;
-      border-bottom: 1px solid var(--line);
-    }
-
+    nav { background:white; border-bottom:1px solid var(--line); }
     nav .links {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 8px 18px;
-      padding: 12px;
+      display:flex; flex-wrap:wrap; justify-content:center;
+      gap:8px 18px; padding:12px;
     }
-
-    nav a {
-      text-decoration: none;
-      font-size: .92rem;
-      color: var(--deep);
-    }
-
-    nav a:hover {
-      color: var(--teal);
-      text-decoration: underline;
-    }
-
-    main {
-      padding: 24px 0 36px;
-    }
-
+    nav a { text-decoration:none; font-size:.92rem; color:var(--deep); }
+    nav a:hover { color:var(--teal); text-decoration:underline; }
+    main { padding:24px 0 36px; }
     section {
-      background: white;
-      border: 1px solid var(--line);
-      border-radius: 16px;
-      padding: clamp(18px, 4vw, 28px);
-      margin: 18px 0;
-      box-shadow: 0 5px 18px #173b3510;
+      background:white; border:1px solid var(--line); border-radius:16px;
+      padding:clamp(18px,4vw,28px); margin:18px 0;
+      box-shadow:0 5px 18px #173b3510;
     }
-
     h2 {
-      color: var(--deep);
-      font-size: 1.35rem;
-      margin: 0 0 16px;
-      padding-right: 12px;
-      border-right: 4px solid var(--gold);
+      color:var(--deep); font-size:1.35rem; margin:0 0 16px;
+      padding-right:12px; border-right:4px solid var(--gold);
     }
-
-    h3 {
-      color: var(--teal);
-      margin: 0 0 7px;
-      font-size: 1.05rem;
-    }
-
-    p {
-      margin: 8px 0;
-    }
-
-    .intro {
-      font-size: 1.03rem;
-    }
-
+    h3 { color:var(--teal); margin:0 0 7px; font-size:1.05rem; }
+    p { margin:8px 0; }
+    .intro { font-size:1.03rem; }
     .facts {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-      gap: 12px;
+      display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+      gap:12px;
     }
-
-    .fact,
-    .item {
-      background: #f7faf8;
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      padding: 14px;
+    .fact,.item {
+      background:#f7faf8; border:1px solid var(--line);
+      border-radius:12px; padding:14px;
     }
-
-    .label {
-      color: var(--muted);
-      font-size: .88rem;
-      display: block;
-    }
-
-    .value {
-      font-weight: bold;
-    }
-
-    .timeline {
-      display: grid;
-      gap: 12px;
-    }
-
-    .item p {
-      margin-bottom: 0;
-    }
-
+    .label { color:var(--muted); font-size:.88rem; display:block; }
+    .value { font-weight:bold; }
+    .timeline { display:grid; gap:12px; }
+    .item p { margin-bottom:0; }
     .docs {
-      display: grid;
-      grid-template-columns: repeat(
-        auto-fit,
-        minmax(min(100%, 280px), 1fr)
-      );
-      gap: 16px;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));
+      gap:16px;
     }
-
     figure {
-      margin: 0;
-      padding: 12px;
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      background: #fbfcfb;
+      margin:0; padding:12px; border:1px solid var(--line);
+      border-radius:12px; background:#fbfcfb; min-width:0;
     }
-
     figure img {
-      display: block;
-      width: 100%;
-      height: auto;
-      max-height: 560px;
-      object-fit: contain;
-      background: #edf1ef;
-      border-radius: 7px;
+      display:block; width:100%; height:auto; max-height:560px;
+      object-fit:contain; background:#edf1ef; border-radius:7px;
     }
-
-    figcaption {
-      padding: 10px 3px 2px;
+    figcaption { padding:10px 3px 2px; overflow-wrap:anywhere; }
+    figcaption strong { display:block; color:var(--deep); }
+    figcaption span { color:var(--muted); font-size:.9rem; }
+    footer { text-align:center; padding:8px 12px 28px; color:var(--muted); font-size:.88rem; }
+    .admin-box { background:#f7faf8; padding:16px; border-radius:12px; border:1px solid var(--line); }
+    .admin-box label { display:block; margin:12px 0 4px; font-weight:bold; }
+    .admin-box input,.admin-box select {
+      width:100%; min-height:45px; padding:9px 11px;
+      border:1px solid #bdcbc5; border-radius:8px; background:white;
     }
-
-    figcaption strong {
-      display: block;
-      color: var(--deep);
+    .btn {
+      border:0; border-radius:8px; padding:10px 16px;
+      background:var(--teal); color:white; margin:8px 4px 4px 0;
     }
-
-    figcaption span {
-      color: var(--muted);
-      font-size: .9rem;
-    }
-
-    footer {
-      text-align: center;
-      padding: 8px 12px 28px;
-      color: var(--muted);
-      font-size: .88rem;
-    }
-
-    @media (max-width: 520px) {
-      .hero {
-        padding-top: 28px;
-      }
-
-      .profile-photo {
-        width: 150px;
-        max-height: 230px;
-      }
-
-      section {
-        border-radius: 12px;
-      }
-
-      nav .links {
-        gap: 7px 12px;
-      }
+    .btn.secondary { background:#e6eeea; color:var(--deep); }
+    .btn.delete { background:#a33131; }
+    .btn:disabled { opacity:.55; cursor:not-allowed; }
+    .status { margin:12px 0; overflow-wrap:anywhere; }
+    .status.error { color:#a33131; }
+    .status.success { color:#176747; }
+    .hidden { display:none !important; }
+    .online-card { position:relative; }
+    .file-name { font-size:.8rem; color:var(--muted); direction:ltr; overflow-wrap:anywhere; }
+    .small-note { font-size:.88rem; color:var(--muted); }
+    @media(max-width:520px) {
+      .hero { padding-top:28px; }
+      .profile-photo { width:150px; max-height:230px; }
+      section { border-radius:12px; }
+      nav .links { gap:7px 12px; }
     }
   </style>
 </head>
 
 <body>
+<header class="hero">
+  <div class="hero-inner">
+    <img src="profile.jpg" alt="عکس محمد قربانی پسیخانی" class="profile-photo">
+    <h1>محمد قربانی پسیخانی</h1>
+    <p>کارشناس مهندسی منابع طبیعی ـ شیلات، تکثیر و پرورش آبزیان</p>
+    <p>رزومه، سوابق کاری، آموزش‌ها و افتخارات حرفه‌ای</p>
+    <span class="tag">صفحه شخصی و رزومه حرفه‌ای</span>
+  </div>
+</header>
 
-  <header class="hero">
-    <div class="hero-inner">
+<nav aria-label="فهرست صفحه">
+  <div class="links">
+    <a href="#about">معرفی</a>
+    <a href="#education">تحصیلات</a>
+    <a href="#work">سوابق کاری</a>
+    <a href="#training">دوره‌ها و گواهینامه‌ها</a>
+    <a href="#honors">افتخارات</a>
+    <a href="#management">مدیریت عکس‌ها</a>
+  </div>
+</nav>
 
-      <img
-        src="profile.jpg"
-        alt="عکس محمد قربانی پسیخانی"
-        class="profile-photo">
-
-      <h1>محمد قربانی پسیخانی</h1>
-
-      <p>کارشناس مهندسی منابع طبیعی ـ شیلات، تکثیر و پرورش آبزیان</p>
-
-      <p>رزومه، سوابق کاری، آموزش‌ها و افتخارات حرفه‌ای</p>
-
-      <span class="tag">صفحه شخصی و رزومه حرفه‌ای</span>
-
+<main>
+  <section id="about">
+    <h2>معرفی کوتاه</h2>
+    <p class="intro">
+      محمد قربانی پسیخانی، دارای تحصیلات دانشگاهی در رشته شیلات با گرایش
+      تکثیر و پرورش آبزیان و تجربه عملی در زمینه پرورش ماهیان گرمابی و
+      فعالیت‌های مرتبط با کشاورزی تلفیقی و آبزی‌پروری.
+    </p>
+    <div class="facts">
+      <div class="fact"><span class="label">حوزه تخصصی</span><span class="value">شیلات و آبزی‌پروری</span></div>
+      <div class="fact"><span class="label">گرایش دانشگاهی</span><span class="value">تکثیر و پرورش آبزیان</span></div>
+      <div class="fact"><span class="label">زمینه فعالیت</span><span class="value">پرورش ماهی و کشاورزی تلفیقی</span></div>
     </div>
-  </header>
+  </section>
 
-  <nav aria-label="فهرست صفحه">
-    <div class="links">
-      <a href="#about">معرفی</a>
-      <a href="#education">تحصیلات</a>
-      <a href="#work">سوابق کاری</a>
-      <a href="#training">دوره‌ها و گواهینامه‌ها</a>
-      <a href="#honors">افتخارات</a>
+  <section id="education">
+    <h2>تحصیلات</h2>
+    <div class="timeline">
+      <article class="item">
+        <h3>کارشناسی مهندسی منابع طبیعی ـ شیلات</h3>
+        <p>گرایش تکثیر و پرورش آبزیان — دانشگاه پیام نور، مرکز رشت</p>
+        <p>پایان تحصیلات: ۱۳۹۵ | معدل کل: ۱۴٫۶۴</p>
+        <figure style="margin-top:12px">
+          <img src="govaahi-payan-tahsileat-shilat.jpg"
+               alt="گواهی پایان تحصیلات کارشناسی شیلات محمد قربانی پسیخانی" loading="lazy">
+          <figcaption><strong>گواهی موقت پایان تحصیلات کارشناسی</strong><span>دانشگاه پیام نور مرکز رشت</span></figcaption>
+        </figure>
+      </article>
+      <article class="item">
+        <h3>فوق‌دیپلم صنایع نساجی — ۱۳۸۱</h3>
+        <p>مدرک فوق‌دیپلم صنایع نساجی در سوابق تحصیلی درج شده است.</p>
+      </article>
     </div>
-  </nav>
+    <h3 style="margin-top:20px">مدارک تحصیلی بارگذاری‌شده</h3>
+    <div id="educationGallery" class="docs"></div>
+  </section>
 
-  <main>
+  <section id="work">
+    <h2>سوابق کاری و فعالیت‌های حرفه‌ای</h2>
+    <div class="timeline">
+      <article class="item">
+        <h3>فعالیت در پرورش ماهی</h3>
+        <p>تجربه عملی در امور پرورش و نگهداری ماهیان گرمابی و کارهای روزمره مرتبط با استخر پرورش ماهی.</p>
+      </article>
+      <article class="item">
+        <h3>کشاورزی تلفیقی و آبزی‌پروری</h3>
+        <p>مشارکت در فعالیت‌های مربوط به محصولات باغی تلفیقی با آبزی‌پروری و تجربه‌های کشاورزی تلفیقی.</p>
+      </article>
+    </div>
+  </section>
 
-    <section id="about">
-      <h2>معرفی کوتاه</h2>
+  <section id="training">
+    <h2>دوره‌ها و گواهینامه‌های آموزشی</h2>
+    <div class="docs">
+      <figure>
+        <img src="govaahi-icdl.jpg" alt="گواهینامه مهارت فناوری اطلاعات ICDL درجه دو" loading="lazy">
+        <figcaption><strong>مهارت فناوری اطلاعات (ICDL درجه ۲)</strong><span>سازمان آموزش فنی و حرفه‌ای کشور</span></figcaption>
+      </figure>
+      <figure>
+        <img src="govaahi-komak-avaliyeh.jpg" alt="گواهی دوره آموزش عمومی کمک‌های اولیه" loading="lazy">
+        <figcaption><strong>کمک‌های اولیه و مراقبت‌های اولیه</strong><span>دوره آموزشی ۱۲۰ ساعته — رشت</span></figcaption>
+      </figure>
+      <figure>
+        <img src="govaahi-hamgam-ba-keshavarz.jpg" alt="گواهینامه طرح بسیج همگام با کشاورز" loading="lazy">
+        <figcaption><strong>طرح بسیج همگام با کشاورز</strong><span>دوره آموزشی — استان اردبیل، ۱۳۹۵</span></figcaption>
+      </figure>
+      <figure>
+        <img src="govaahi-padafand-gheyramel.jpg" alt="گواهینامه آموزشی پدافند غیرعامل" loading="lazy">
+        <figcaption><strong>پدافند غیرعامل</strong><span>دوره آموزشی بسیج — خرداد ۱۳۹۶</span></figcaption>
+      </figure>
+    </div>
+    <h3 style="margin-top:20px">گواهینامه‌های جدید</h3>
+    <div id="certificatesGallery" class="docs"></div>
+  </section>
 
-      <p class="intro">
-        محمد قربانی پسیخانی، کارشناس مهندسی منابع طبیعی ـ شیلات
-        با گرایش تکثیر و پرورش آبزیان، دارای تجربه در زمینه پرورش
-        ماهیان گرمابی و فعالیت‌های مرتبط با کشاورزی تلفیقی و
-        آبزی‌پروری. در این صفحه، سوابق تحصیلی، تجربه‌های کاری،
-        گواهینامه‌های آموزشی و مدارک تقدیر و افتخار ارائه شده‌اند.
-      </p>
+  <section id="honors">
+    <h2>افتخارات و لوح‌های تقدیر</h2>
+    <div class="docs">
+      <figure>
+        <img src="lohe-abzi-parvari.jpg" alt="لوح تقدیر فعالیت در مزرعه الگویی کشاورزی تلفیقی" loading="lazy">
+        <figcaption><strong>تقدیر بابت فعالیت در مزرعه الگویی کشاورزی تلفیقی</strong><span>راه‌اندازی مزرعه الگویی بر مبنای آبزی‌پروری</span></figcaption>
+      </figure>
+      <figure>
+        <img src="lohe-jahad-keshavarzi.jpg" alt="تقدیرنامه سازمان جهاد کشاورزی استان گیلان" loading="lazy">
+        <figcaption><strong>تقدیرنامه جهاد کشاورزی استان گیلان</strong><span>قدردانی از فعالیت‌ها و مشارکت حرفه‌ای</span></figcaption>
+      </figure>
+      <figure>
+        <img src="lohe-karafarin-nemuneh.jpg" alt="لوح تقدیر کارآفرین نمونه در کشاورزی تلفیقی" loading="lazy">
+        <figcaption><strong>کارآفرین نمونه</strong><span>تقدیر بابت فعالیت در محصولات باغی تلفیقی با آبزی‌پروری — ۱۳۹۶</span></figcaption>
+      </figure>
+    </div>
+    <h3 style="margin-top:20px">لوح‌های تقدیر جدید</h3>
+    <div id="honorsGallery" class="docs"></div>
+  </section>
 
-      <div class="facts">
+  <section id="management">
+    <h2>مدیریت عکس‌ها</h2>
+    <p>این بخش برای افزودن و حذف عکس مدارک، گواهینامه‌ها و لوح‌های تقدیر است. ورود مدیر برای مدیریت تصاویر الزامی است.</p>
 
-        <div class="fact">
-          <span class="label">حوزه تخصصی</span>
-          <span class="value">شیلات و آبزی‌پروری</span>
-        </div>
+    <div id="loginBox" class="admin-box">
+      <h3>ورود مدیر سایت</h3>
+      <label for="adminEmail">ایمیل مدیر</label>
+      <input id="adminEmail" type="email" autocomplete="username"
+             placeholder="ایمیل حساب مدیر" inputmode="email">
+      <label for="adminPassword">رمز عبور</label>
+      <input id="adminPassword" type="password" autocomplete="current-password"
+             placeholder="رمز عبور Supabase">
+      <button id="loginBtn" class="btn" type="button">ورود مدیر</button>
+      <p id="loginStatus" class="status" role="status" aria-live="polite"></p>
+    </div>
 
-        <div class="fact">
-          <span class="label">گرایش دانشگاهی</span>
-          <span class="value">تکثیر و پرورش آبزیان</span>
-        </div>
+    <div id="adminPanel" class="admin-box hidden">
+      <h3>پنل مدیریت تصاویر</h3>
+      <p id="signedInAs" class="small-note"></p>
 
-        <div class="fact">
-          <span class="label">زمینه فعالیت</span>
-          <span class="value">پرورش ماهی و کشاورزی تلفیقی</span>
-        </div>
+      <label for="photoCategory">دسته‌بندی عکس</label>
+      <select id="photoCategory">
+        <option value="education">مدارک تحصیلی</option>
+        <option value="certificates">گواهینامه‌ها و دوره‌ها</option>
+        <option value="honors">لوح‌های تقدیر و افتخارات</option>
+      </select>
 
-      </div>
-    </section>
+      <label for="photoTitle">عنوان عکس (اختیاری)</label>
+      <input id="photoTitle" type="text" maxlength="100"
+             placeholder="مثلاً گواهینامه کمک‌های اولیه">
 
-    <section id="education">
-      <h2>تحصیلات</h2>
+      <label for="photoFile">انتخاب عکس از گوشی</label>
+      <input id="photoFile" type="file" accept="image/*">
 
-      <div class="timeline">
+      <button id="uploadBtn" class="btn" type="button">بارگذاری عکس</button>
+      <button id="refreshBtn" class="btn secondary" type="button">به‌روزرسانی عکس‌ها</button>
+      <button id="logoutBtn" class="btn secondary" type="button">خروج مدیر</button>
 
-        <article class="item">
-          <h3>کارشناسی مهندسی منابع طبیعی ـ شیلات</h3>
+      <p id="adminStatus" class="status" role="status" aria-live="polite"></p>
+      <hr style="border:0;border-top:1px solid var(--line);margin:20px 0">
+      <h3>عکس‌های قابل مدیریت</h3>
+      <p class="small-note">فقط عکس‌های پوشه‌های اختصاصی سایت شما در این فهرست نمایش داده می‌شوند.</p>
+      <div id="adminGallery" class="docs"></div>
+    </div>
+  </section>
+</main>
 
-          <p>گرایش تکثیر و پرورش آبزیان — دانشگاه پیام نور، مرکز رشت</p>
+<footer>
+  <p>محمد قربانی پسیخانی | صفحه شخصی و رزومه حرفه‌ای</p>
+</footer>
 
-          <p>پایان تحصیلات: ۱۳۹۵ | معدل کل: ۱۴٫۶۴</p>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+(() => {
+  "use strict";
 
-          <figure style="margin-top:12px">
-            <img
-              src="govaahi-payan-tahsileat-shilat.jpg"
-              alt="گواهی پایان تحصیلات کارشناسی شیلات محمد قربانی پسیخانی"
-              loading="lazy">
+  // اطلاعات عمومی پروژه Supabase
+  const SUPABASE_URL = "https://mdfvczwflgdcyboxylqk.supabase.co";
+  const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_N2k7-2ni7AX1dxSD2GVaMA_gyZj2DDL";
+  const BUCKET = "aminreza-photos";
+  const ADMIN_EMAIL = "m.ghorbani.pasikhani@gmail.com";
 
-            <figcaption>
-              <strong>گواهی موقت پایان تحصیلات کارشناسی</strong>
-              <span>دانشگاه پیام نور مرکز رشت</span>
-            </figcaption>
-          </figure>
-        </article>
+  // همه فایل‌های این سایت فقط در مسیر mohammad/ ذخیره می‌شوند.
+  const CATEGORIES = {
+    education: { label: "مدارک تحصیلی", gallery: "educationGallery" },
+    certificates: { label: "گواهینامه‌ها", gallery: "certificatesGallery" },
+    honors: { label: "لوح‌های تقدیر", gallery: "honorsGallery" }
+  };
 
-        <article class="item">
-          <h3>فوق‌دیپلم صنایع نساجی — ۱۳۸۱</h3>
+  const $ = id => document.getElementById(id);
+  const loginBox = $("loginBox");
+  const adminPanel = $("adminPanel");
+  const loginStatus = $("loginStatus");
+  const adminStatus = $("adminStatus");
 
-          <p>
-            مدرک فوق‌دیپلم صنایع نساجی در سوابق تحصیلی درج شده است.
-            تصویر این مدرک در میان عکس‌های ارسالی موجود نبود.
-          </p>
-        </article>
+  let db = null;
+  let currentUser = null;
+  let busy = false;
 
-      </div>
-    </section>
+  function status(element, message, kind = "") {
+    element.textContent = message;
+    element.className = "status" + (kind ? " " + kind : "");
+  }
 
-    <section id="work">
-      <h2>سوابق کاری و فعالیت‌های حرفه‌ای</h2>
+  function safeName(name) {
+    return name.replace(/[^\w.\-()\u0600-\u06FF ]/g, "_").slice(0, 120);
+  }
 
-      <div class="timeline">
+  function publicUrl(path) {
+    return db.storage.from(BUCKET).getPublicUrl(path).data.publicUrl;
+  }
 
-        <article class="item">
-          <h3>فعالیت در پرورش ماهی</h3>
+  function makeFigure(file, path, category, removable = false) {
+    const figure = document.createElement("figure");
+    figure.className = "online-card";
 
-          <p>
-            تجربه عملی در امور پرورش و نگهداری ماهیان گرمابی و
-            کارهای روزمره مرتبط با استخر پرورش ماهی.
-          </p>
-        </article>
+    const img = document.createElement("img");
+    img.src = publicUrl(path);
+    img.alt = file.title || file.name || CATEGORIES[category].label;
+    img.loading = "lazy";
+    img.onerror = () => {
+      img.alt = "تصویر بارگذاری نشد";
+      img.style.minHeight = "100px";
+    };
 
-        <article class="item">
-          <h3>کشاورزی تلفیقی و آبزی‌پروری</h3>
+    const caption = document.createElement("figcaption");
+    const title = document.createElement("strong");
+    title.textContent = file.title || file.name || "تصویر";
+    const label = document.createElement("span");
+    label.textContent = CATEGORIES[category].label;
+    const filename = document.createElement("div");
+    filename.className = "file-name";
+    filename.textContent = file.name || "";
 
-          <p>
-            مشارکت در فعالیت‌های مربوط به ایجاد و مدیریت محصولات
-            باغی تلفیقی با آبزی‌پروری و ترویج تجربه‌های کشاورزی تلفیقی.
-          </p>
-        </article>
+    caption.append(title, label, filename);
+    figure.append(img, caption);
 
-      </div>
-    </section>
+    if (removable) {
+      const del = document.createElement("button");
+      del.type = "button";
+      del.className = "btn delete";
+      del.textContent = "حذف این عکس";
+      del.addEventListener("click", () => deletePhoto(path, figure));
+      figure.append(del);
+    }
+    return figure;
+  }
 
-    <section id="training">
-      <h2>دوره‌ها و گواهینامه‌های آموزشی</h2>
+  async function listCategory(category) {
+    const folder = "mohammad/" + category;
+    const { data, error } = await db.storage.from(BUCKET).list(folder, {
+      limit: 100,
+      sortBy: { column: "created_at", order: "desc" }
+    });
+    if (error) throw error;
 
-      <div class="docs">
+    return (data || [])
+      .filter(file => file.name && file.name !== ".emptyFolderPlaceholder")
+      .filter(file => /\.(jpe?g|png|webp|gif|avif|heic)$/i.test(file.name))
+      .map(file => ({
+        ...file,
+        title: file.name.replace(/^\d+_/, "").replace(/\.[^.]+$/, "").replace(/_/g, " ")
+      }));
+  }
 
-        <figure>
-          <img
-            src="govaahi-icdl.jpg"
-            alt="گواهینامه مهارت فناوری اطلاعات ICDL درجه دو"
-            loading="lazy">
+  async function refreshPublicGalleries() {
+    for (const [category, config] of Object.entries(CATEGORIES)) {
+      const target = $(config.gallery);
+      target.replaceChildren();
+      try {
+        const files = await listCategory(category);
+        for (const file of files) {
+          const path = "mohammad/" + category + "/" + file.name;
+          target.append(makeFigure(file, path, category));
+        }
+      } catch (error) {
+        console.error("Gallery loading error:", category, error);
+        const note = document.createElement("p");
+        note.className = "small-note";
+        note.textContent = "نمایش عکس‌های آنلاین فعلاً ممکن نیست.";
+        target.append(note);
+      }
+    }
+  }
 
-          <figcaption>
-            <strong>مهارت فناوری اطلاعات (ICDL درجه ۲)</strong>
-            <span>سازمان آموزش فنی و حرفه‌ای کشور</span>
-          </figcaption>
-        </figure>
+  async function refreshAdminGallery() {
+    const target = $("adminGallery");
+    target.replaceChildren();
 
-        <figure>
-          <img
-            src="govaahi-komak-avaliyeh.jpg"
-            alt="گواهی دوره آموزش عمومی کمک‌های اولیه"
-            loading="lazy">
+    for (const [category, config] of Object.entries(CATEGORIES)) {
+      const heading = document.createElement("h3");
+      heading.style.gridColumn = "1 / -1";
+      heading.textContent = config.label;
+      target.append(heading);
 
-          <figcaption>
-            <strong>کمک‌های اولیه و مراقبت‌های اولیه</strong>
-            <span>دوره آموزشی ۱۲۰ ساعته — رشت</span>
-          </figcaption>
-        </figure>
+      const files = await listCategory(category);
+      if (!files.length) {
+        const note = document.createElement("p");
+        note.className = "small-note";
+        note.textContent = "هنوز عکسی در این دسته بارگذاری نشده است.";
+        target.append(note);
+      }
 
-        <figure>
-          <img
-            src="govaahi-hamgam-ba-keshavarz.jpg"
-            alt="گواهینامه طرح بسیج همگام با کشاورز"
-            loading="lazy">
+      for (const file of files) {
+        const path = "mohammad/" + category + "/" + file.name;
+        target.append(makeFigure(file, path, category, true));
+      }
+    }
+  }
 
-          <figcaption>
-            <strong>طرح بسیج همگام با کشاورز</strong>
-            <span>دوره آموزشی — استان اردبیل، ۱۳۹۵</span>
-          </figcaption>
-        </figure>
+  function setBusy(value) {
+    busy = value;
+    ["loginBtn", "uploadBtn", "refreshBtn", "logoutBtn"].forEach(id => {
+      $(id).disabled = value;
+    });
+  }
 
-        <figure>
-          <img
-            src="govaahi-padafand-gheyramel.jpg"
-            alt="گواهینامه آموزشی پدافند غیرعامل"
-            loading="lazy">
+  async function showAdmin(user) {
+    currentUser = user;
+    loginBox.classList.add("hidden");
+    adminPanel.classList.remove("hidden");
+    $("signedInAs").textContent = "وارد شده‌اید با: " + user.email;
+    status(adminStatus, "در حال دریافت فهرست عکس‌ها...");
+    try {
+      await refreshPublicGalleries();
+      await refreshAdminGallery();
+      status(adminStatus, "ورود موفق بود. می‌توانید عکس‌ها را مدیریت کنید.", "success");
+    } catch (error) {
+      status(adminStatus, "ورود انجام شد، اما دریافت فهرست عکس‌ها ناموفق بود: " + error.message, "error");
+    }
+  }
 
-          <figcaption>
-            <strong>پدافند غیرعامل</strong>
-            <span>دوره آموزشی بسیج — خرداد ۱۳۹۶</span>
-          </figcaption>
-        </figure>
+  async function hideAdmin() {
+    currentUser = null;
+    adminPanel.classList.add("hidden");
+    loginBox.classList.remove("hidden");
+    $("adminPassword").value = "";
+    status(loginStatus, "از حساب مدیر خارج شدید.");
+  }
 
-      </div>
-    </section>
+  async function login() {
+    if (busy) return;
+    if (!db) {
+      status(loginStatus, "اتصال Supabase آماده نیست. اتصال اینترنت و تنظیمات را بررسی کنید.", "error");
+      return;
+    }
 
-    <section id="honors">
-      <h2>افتخارات و لوح‌های تقدیر</h2>
+    const email = $("adminEmail").value.trim().toLowerCase();
+    const password = $("adminPassword").value;
 
-      <div class="docs">
+    if (!email || !password) {
+      status(loginStatus, "ایمیل و رمز عبور را وارد کنید.", "error");
+      return;
+    }
+    if (email !== ADMIN_EMAIL) {
+      status(loginStatus, "این ایمیل، ایمیل مدیر مجاز این سایت نیست.", "error");
+      return;
+    }
 
-        <figure>
-          <img
-            src="lohe-abzi-parvari.jpg"
-            alt="لوح تقدیر فعالیت در مزرعه الگویی کشاورزی تلفیقی"
-            loading="lazy">
+    setBusy(true);
+    status(loginStatus, "در حال ورود...");
+    try {
+      const { data, error } = await db.auth.signInWithPassword({ email, password });
+      if (error) throw error;
 
-          <figcaption>
-            <strong>تقدیر بابت فعالیت در مزرعه الگویی کشاورزی تلفیقی</strong>
-            <span>راه‌اندازی مزرعه الگویی بر مبنای آبزی‌پروری</span>
-          </figcaption>
-        </figure>
+      if (!data.user || data.user.email.toLowerCase() !== ADMIN_EMAIL) {
+        await db.auth.signOut();
+        throw new Error("حساب واردشده حساب مدیر مجاز نیست.");
+      }
+      await showAdmin(data.user);
+    } catch (error) {
+      status(loginStatus, "ورود ناموفق بود: " + error.message, "error");
+    } finally {
+      setBusy(false);
+    }
+  }
 
-        <figure>
-          <img
-            src="lohe-jahad-keshavarzi.jpg"
-            alt="تقدیرنامه سازمان جهاد کشاورزی استان گیلان"
-            loading="lazy">
+  async function uploadPhoto() {
+    if (busy || !currentUser) return;
+    const category = $("photoCategory").value;
+    const file = $("photoFile").files[0];
+    const title = $("photoTitle").value.trim();
 
-          <figcaption>
-            <strong>تقدیرنامه جهاد کشاورزی استان گیلان</strong>
-            <span>قدردانی از فعالیت‌ها و مشارکت حرفه‌ای</span>
-          </figcaption>
-        </figure>
+    if (!file) {
+      status(adminStatus, "ابتدا یک عکس از گوشی انتخاب کنید.", "error");
+      return;
+    }
+    if (!file.type.startsWith("image/")) {
+      status(adminStatus, "لطفاً یک فایل تصویری انتخاب کنید.", "error");
+      return;
+    }
+    if (file.size > 10 * 1024 * 1024) {
+      status(adminStatus, "حجم عکس باید کمتر از ۱۰ مگابایت باشد.", "error");
+      return;
+    }
 
-        <figure>
-          <img
-            src="lohe-karafarin-nemuneh.jpg"
-            alt="لوح تقدیر کارآفرین نمونه در کشاورزی تلفیقی"
-            loading="lazy">
+    setBusy(true);
+    status(adminStatus, "در حال بارگذاری عکس...");
+    try {
+      const clean = safeName(file.name || "photo.jpg");
+      const path = "mohammad/" + category + "/" + Date.now() + "_" + clean;
+      const { error } = await db.storage.from(BUCKET).upload(path, file, {
+        cacheControl: "3600",
+        upsert: false,
+        contentType: file.type
+      });
+      if (error) throw error;
 
-          <figcaption>
-            <strong>کارآفرین نمونه</strong>
-            <span>تقدیر بابت فعالیت در محصولات باغی تلفیقی با آبزی‌پروری — ۱۳۹۶</span>
-          </figcaption>
-        </figure>
+      // عنوان در نام فایل ذخیره می‌شود تا پس از بارگذاری هم قابل نمایش باشد.
+      // در صورت وارد کردن عنوان، نام فایل قابل خواندن‌تری ساخته می‌شود.
+      if (title) {
+        const newName = safeName(title).replace(/\s+/g, "_");
+        const renamedPath = "mohammad/" + category + "/" + Date.now() + "_" + newName +
+          (/\.[a-z0-9]+$/i.test(clean) ? clean.match(/\.[a-z0-9]+$/i)[0] : ".jpg");
+        const { error: copyError } = await db.storage.from(BUCKET).copy(path, renamedPath);
+        if (copyError) throw copyError;
+        const { error: removeError } = await db.storage.from(BUCKET).remove([path]);
+        if (removeError) throw removeError;
+      }
 
-      </div>
-    </section>
+      $("photoFile").value = "";
+      $("photoTitle").value = "";
+      await refreshPublicGalleries();
+      await refreshAdminGallery();
+      status(adminStatus, "عکس با موفقیت بارگذاری شد.", "success");
+    } catch (error) {
+      status(adminStatus, "بارگذاری ناموفق بود: " + error.message, "error");
+    } finally {
+      setBusy(false);
+    }
+  }
 
-  </main>
+  async function deletePhoto(path, figure) {
+    if (!currentUser || busy) return;
+    if (!path.startsWith("mohammad/")) {
+      status(adminStatus, "برای امنیت، فقط عکس‌های پوشه سایت شما قابل حذف هستند.", "error");
+      return;
+    }
+    if (!confirm("آیا از حذف این عکس مطمئن هستید؟ این کار قابل بازگشت نیست.")) return;
 
-  <footer>
-    <p>محمد قربانی پسیخانی | صفحه شخصی و رزومه حرفه‌ای</p>
-  </footer>
+    setBusy(true);
+    status(adminStatus, "در حال حذف عکس...");
+    try {
+      const { error } = await db.storage.from(BUCKET).remove([path]);
+      if (error) throw error;
+      figure.remove();
+      await refreshPublicGalleries();
+      status(adminStatus, "عکس حذف شد.", "success");
+    } catch (error) {
+      status(adminStatus, "حذف عکس انجام نشد: " + error.message, "error");
+    } finally {
+      setBusy(false);
+    }
+  }
 
+  async function logout() {
+    if (!db) return;
+    setBusy(true);
+    try {
+      const { error } = await db.auth.signOut();
+      if (error) throw error;
+      await hideAdmin();
+    } catch (error) {
+      status(adminStatus, "خروج انجام نشد: " + error.message, "error");
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  async function init() {
+    if (!window.supabase || !window.supabase.createClient) {
+      status(loginStatus, "کتابخانه Supabase بارگذاری نشد. اتصال اینترنت را بررسی کنید.", "error");
+      return;
+    }
+
+    db = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+
+    $("loginBtn").addEventListener("click", login);
+    $("uploadBtn").addEventListener("click", uploadPhoto);
+    $("refreshBtn").addEventListener("click", async () => {
+      if (!currentUser) return;
+      setBusy(true);
+      try {
+        await refreshPublicGalleries();
+        await refreshAdminGallery();
+        status(adminStatus, "فهرست عکس‌ها به‌روز شد.", "success");
+      } catch (error) {
+        status(adminStatus, "به‌روزرسانی ناموفق بود: " + error.message, "error");
+      } finally {
+        setBusy(false);
+      }
+    });
+    $("logoutBtn").addEventListener("click", logout);
+    $("adminPassword").addEventListener("keydown", event => {
+      if (event.key === "Enter") login();
+    });
+
+    // نمایش عمومی عکس‌ها برای بازدیدکنندگان
+    await refreshPublicGalleries();
+
+    // اگر نشست مدیر هنوز معتبر است، پنل را بازیابی کن.
+    const { data } = await db.auth.getSession();
+    if (data.session && data.session.user &&
+        data.session.user.email.toLowerCase() === ADMIN_EMAIL) {
+      await showAdmin(data.session.user);
+    }
+  }
+
+  init().catch(error => {
+    console.error(error);
+    status(loginStatus, "راه‌اندازی سایت کامل نشد: " + error.message, "error");
+  });
+})();
+</script>
 </body>
 </html>
