@@ -2,634 +2,869 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#123b3a">
-  <meta name="description" content="رزومه محمد قربانی پسیخانی؛ سوابق کاری، تحصیلات، گواهینامه‌ها و افتخارات حرفه‌ای.">
-  <meta name="robots" content="index, follow">
-  <meta name="google-site-verification" content="Hwa3oeSRRPStQAg-f00KaW88wU0ErEOh5DmtoQCwosg">
-  <link rel="canonical" href="https://mghorbani-pasikhani.github.io/">
-  <title>محمد قربانی پسیخانی | رزومه و سوابق حرفه‌ای</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="وب‌سایت شخصی محمد قربانی پسیخانی؛ رزومه، مدارک تحصیلی، گواهی‌ها و لوح‌های تقدیر">
+<title>محمد قربانی پسیخانی | رزومه شخصی</title>
 
-  <style>
-    :root {
-      --deep:#123b3a; --teal:#1e6660; --gold:#c69b4c;
-      --ink:#263635; --muted:#63716f; --bg:#f1f5f3; --line:#dce6e2;
-    }
-    * { box-sizing:border-box; }
-    html { scroll-behavior:smooth; }
-    body {
-      margin:0; font-family:Tahoma,Arial,sans-serif;
-      line-height:1.9; color:var(--ink); background:var(--bg);
-    }
-    a { color:inherit; }
-    button,input,select { font:inherit; }
-    button { cursor:pointer; }
-    .hero {
-      background:linear-gradient(135deg,#0c2d2d,#1e6660);
-      color:white; padding:35px 18px 40px; text-align:center;
-      border-bottom:5px solid var(--gold);
-    }
-    .hero-inner,main,footer { width:min(100% - 28px,980px); margin:auto; }
-    .profile-photo {
-      display:block; width:180px; height:auto; max-height:260px;
-      object-fit:contain; margin:0 auto 18px; border:3px solid var(--gold);
-      border-radius:8px; background:white;
-    }
-    .hero h1 { margin:0 0 8px; font-size:clamp(1.8rem,5vw,2.7rem); }
-    .hero p { margin:5px auto; max-width:760px; color:#e0efeb; }
-    .tag {
-      display:inline-block; margin-top:15px; padding:5px 14px;
-      border:1px solid #ffffff70; border-radius:999px; font-size:.9rem;
-    }
-    nav { background:white; border-bottom:1px solid var(--line); }
-    nav .links {
-      display:flex; flex-wrap:wrap; justify-content:center;
-      gap:8px 18px; padding:12px;
-    }
-    nav a { text-decoration:none; font-size:.92rem; color:var(--deep); }
-    nav a:hover { color:var(--teal); text-decoration:underline; }
-    main { padding:24px 0 36px; }
-    section {
-      background:white; border:1px solid var(--line); border-radius:16px;
-      padding:clamp(18px,4vw,28px); margin:18px 0;
-      box-shadow:0 5px 18px #173b3510;
-    }
-    h2 {
-      color:var(--deep); font-size:1.35rem; margin:0 0 16px;
-      padding-right:12px; border-right:4px solid var(--gold);
-    }
-    h3 { color:var(--teal); margin:0 0 7px; font-size:1.05rem; }
-    p { margin:8px 0; }
-    .intro { font-size:1.03rem; }
-    .facts {
-      display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
-      gap:12px;
-    }
-    .fact,.item {
-      background:#f7faf8; border:1px solid var(--line);
-      border-radius:12px; padding:14px;
-    }
-    .label { color:var(--muted); font-size:.88rem; display:block; }
-    .value { font-weight:bold; }
-    .timeline { display:grid; gap:12px; }
-    .item p { margin-bottom:0; }
-    .docs {
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));
-      gap:16px;
-    }
-    figure {
-      margin:0; padding:12px; border:1px solid var(--line);
-      border-radius:12px; background:#fbfcfb; min-width:0;
-    }
-    figure img {
-      display:block; width:100%; height:auto; max-height:560px;
-      object-fit:contain; background:#edf1ef; border-radius:7px;
-    }
-    figcaption { padding:10px 3px 2px; overflow-wrap:anywhere; }
-    figcaption strong { display:block; color:var(--deep); }
-    figcaption span { color:var(--muted); font-size:.9rem; }
-    footer { text-align:center; padding:8px 12px 28px; color:var(--muted); font-size:.88rem; }
-    .admin-box { background:#f7faf8; padding:16px; border-radius:12px; border:1px solid var(--line); }
-    .admin-box label { display:block; margin:12px 0 4px; font-weight:bold; }
-    .admin-box input,.admin-box select {
-      width:100%; min-height:45px; padding:9px 11px;
-      border:1px solid #bdcbc5; border-radius:8px; background:white;
-    }
-    .btn {
-      border:0; border-radius:8px; padding:10px 16px;
-      background:var(--teal); color:white; margin:8px 4px 4px 0;
-    }
-    .btn.secondary { background:#e6eeea; color:var(--deep); }
-    .btn.delete { background:#a33131; }
-    .btn:disabled { opacity:.55; cursor:not-allowed; }
-    .status { margin:12px 0; overflow-wrap:anywhere; }
-    .status.error { color:#a33131; }
-    .status.success { color:#176747; }
-    .hidden { display:none !important; }
-    .online-card { position:relative; }
-    .file-name { font-size:.8rem; color:var(--muted); direction:ltr; overflow-wrap:anywhere; }
-    .small-note { font-size:.88rem; color:var(--muted); }
-    @media(max-width:520px) {
-      .hero { padding-top:28px; }
-      .profile-photo { width:150px; max-height:230px; }
-      section { border-radius:12px; }
-      nav .links { gap:7px 12px; }
-    }
-  </style>
+<style>
+:root {
+  --green: #176b48;
+  --green2: #23845b;
+  --pale: #eef8f1;
+  --ink: #24312a;
+  --muted: #637168;
+  --line: #dce8df;
+  --red: #a72d2d;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #f4f7f5;
+  color: var(--ink);
+  font-family: Tahoma, Arial, sans-serif;
+  line-height: 1.9;
+}
+a { color: var(--green); text-decoration: none; }
+header {
+  background: linear-gradient(135deg,#145638,#2b8b60);
+  color: white;
+  padding: 30px 16px 24px;
+  text-align: center;
+}
+.wrap { max-width: 1000px; margin: auto; padding: 0 16px; }
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.profile img {
+  width: 150px;
+  height: 175px;
+  object-fit: cover;
+  border: 3px solid white;
+  border-radius: 10px;
+  background: #e6eee8;
+}
+h1 { font-size: clamp(24px,4vw,34px); margin: 0 0 6px; }
+header p { margin: 3px 0; }
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background: white;
+  box-shadow: 0 2px 8px #00000012;
+}
+nav .wrap {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+nav a {
+  white-space: nowrap;
+  padding: 7px 11px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+nav a:hover { background: var(--pale); }
+main { padding: 20px 0 40px; }
+section {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 20px;
+  margin: 0 0 16px;
+  box-shadow: 0 3px 12px #173c2410;
+}
+h2 {
+  font-size: 21px;
+  color: var(--green);
+  margin: 0 0 12px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 7px;
+}
+h3 { font-size: 17px; margin: 10px 0 4px; }
+ul { padding-right: 22px; margin: 8px 0; }
+.muted { color: var(--muted); font-size: 14px; }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 12px;
+}
+.item {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 13px;
+  background: #fcfefc;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(160px,1fr));
+  gap: 12px;
+}
+.photo {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  background: white;
+  margin: 0;
+}
+.photo img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  background: #f2f5f3;
+}
+.photo figcaption {
+  padding: 8px 10px;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+.empty {
+  background: #f7faf8;
+  color: var(--muted);
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  grid-column: 1 / -1;
+}
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: 0;
+  border-radius: 8px;
+  background: var(--green);
+  color: white;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+button:hover { background: var(--green2); }
+button:disabled { opacity: .6; cursor: wait; }
+button.secondary { background: #e9f2ec; color: var(--green); border: 1px solid var(--line); }
+button.danger { background: var(--red); }
+input,select {
+  font-family: inherit;
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #cbd9ce;
+  border-radius: 8px;
+  background: white;
+  margin: 5px 0 12px;
+  font-size: 14px;
+}
+label { font-size: 14px; font-weight: bold; }
+.admin-area {
+  border: 1px dashed #9cb9a4;
+  background: #f8fcf9;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 12px;
+}
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 12px;
+}
+.status {
+  padding: 10px 12px;
+  border-radius: 8px;
+  margin: 10px 0;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+.status.info { background: #eaf3ff; color: #174a78; }
+.status.ok { background: #eaf7ed; color: #1d6538; }
+.status.err { background: #fff0f0; color: #8a2020; }
+.hidden { display: none !important; }
+footer { text-align: center; padding: 22px; color: var(--muted); font-size: 13px; }
+.small-btn { font-size: 12px; padding: 6px 9px; margin: 3px; }
+@media(max-width:600px) {
+  section { padding: 15px; }
+  .profile img { width: 125px; height: 150px; }
+  .gallery { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .photo img { height: 145px; }
+}
+</style>
 </head>
 
 <body>
-<header class="hero">
-  <div class="hero-inner">
-    <img src="profile.jpg" alt="عکس محمد قربانی پسیخانی" class="profile-photo">
-    <h1>محمد قربانی پسیخانی</h1>
-    <p>کارشناس مهندسی منابع طبیعی ـ شیلات، تکثیر و پرورش آبزیان</p>
-    <p>رزومه، سوابق کاری، آموزش‌ها و افتخارات حرفه‌ای</p>
-    <span class="tag">صفحه شخصی و رزومه حرفه‌ای</span>
+
+<header>
+  <div class="wrap profile">
+    <img src="profile.jpg"
+         alt="عکس محمد قربانی پسیخانی"
+         onerror="this.style.display='none'">
+    <div>
+      <h1>محمد قربانی پسیخانی</h1>
+      <p><strong>کارشناس مهندسی منابع طبیعی ـ شیلات و آبزی‌پروری</strong></p>
+      <p>به وب‌سایت شخصی و رزومه من خوش آمدید 🌿</p>
+    </div>
   </div>
 </header>
 
-<nav aria-label="فهرست صفحه">
-  <div class="links">
-    <a href="#about">معرفی</a>
+<nav>
+  <div class="wrap">
+    <a href="#about">درباره من</a>
     <a href="#education">تحصیلات</a>
-    <a href="#work">سوابق کاری</a>
-    <a href="#training">دوره‌ها و گواهینامه‌ها</a>
-    <a href="#honors">افتخارات</a>
+    <a href="#experience">سوابق کاری</a>
+    <a href="#education-docs">مدارک تحصیلی</a>
+    <a href="#certificates">گواهی‌ها</a>
+    <a href="#honors">لوح‌های تقدیر</a>
     <a href="#management">مدیریت عکس‌ها</a>
   </div>
 </nav>
 
-<main>
-  <section id="about">
-    <h2>معرفی کوتاه</h2>
-    <p class="intro">
-      محمد قربانی پسیخانی، دارای تحصیلات دانشگاهی در رشته شیلات با گرایش
-      تکثیر و پرورش آبزیان و تجربه عملی در زمینه پرورش ماهیان گرمابی و
-      فعالیت‌های مرتبط با کشاورزی تلفیقی و آبزی‌پروری.
-    </p>
-    <div class="facts">
-      <div class="fact"><span class="label">حوزه تخصصی</span><span class="value">شیلات و آبزی‌پروری</span></div>
-      <div class="fact"><span class="label">گرایش دانشگاهی</span><span class="value">تکثیر و پرورش آبزیان</span></div>
-      <div class="fact"><span class="label">زمینه فعالیت</span><span class="value">پرورش ماهی و کشاورزی تلفیقی</span></div>
+<main class="wrap">
+
+<section id="about">
+  <h2>درباره من</h2>
+  <p>
+    این صفحه برای معرفی سوابق تحصیلی و کاری، مدارک، گواهی‌ها
+    و تقدیرنامه‌های محمد قربانی پسیخانی تهیه شده است.
+  </p>
+</section>
+
+<section id="education">
+  <h2>تحصیلات</h2>
+  <div class="cards">
+    <div class="item">
+      <h3>کارشناسی مهندسی منابع طبیعی ـ شیلات</h3>
+      <p>دانشگاه پیام نور، مرکز رشت</p>
+      <p class="muted">سال پایان تحصیل: ۱۳۹۵ | معدل: ۱۴٫۶۴</p>
     </div>
-  </section>
-
-  <section id="education">
-    <h2>تحصیلات</h2>
-    <div class="timeline">
-      <article class="item">
-        <h3>کارشناسی مهندسی منابع طبیعی ـ شیلات</h3>
-        <p>گرایش تکثیر و پرورش آبزیان — دانشگاه پیام نور، مرکز رشت</p>
-        <p>پایان تحصیلات: ۱۳۹۵ | معدل کل: ۱۴٫۶۴</p>
-        <figure style="margin-top:12px">
-          <img src="govaahi-payan-tahsileat-shilat.jpg"
-               alt="گواهی پایان تحصیلات کارشناسی شیلات محمد قربانی پسیخانی" loading="lazy">
-          <figcaption><strong>گواهی موقت پایان تحصیلات کارشناسی</strong><span>دانشگاه پیام نور مرکز رشت</span></figcaption>
-        </figure>
-      </article>
-      <article class="item">
-        <h3>فوق‌دیپلم صنایع نساجی — ۱۳۸۱</h3>
-        <p>مدرک فوق‌دیپلم صنایع نساجی در سوابق تحصیلی درج شده است.</p>
-      </article>
+    <div class="item">
+      <h3>فوق‌دیپلم صنایع نساجی</h3>
+      <p class="muted">سال اخذ مدرک: ۱۳۸۱</p>
     </div>
-    <h3 style="margin-top:20px">مدارک تحصیلی بارگذاری‌شده</h3>
-    <div id="educationGallery" class="docs"></div>
-  </section>
+  </div>
+</section>
 
-  <section id="work">
-    <h2>سوابق کاری و فعالیت‌های حرفه‌ای</h2>
-    <div class="timeline">
-      <article class="item">
-        <h3>فعالیت در پرورش ماهی</h3>
-        <p>تجربه عملی در امور پرورش و نگهداری ماهیان گرمابی و کارهای روزمره مرتبط با استخر پرورش ماهی.</p>
-      </article>
-      <article class="item">
-        <h3>کشاورزی تلفیقی و آبزی‌پروری</h3>
-        <p>مشارکت در فعالیت‌های مربوط به محصولات باغی تلفیقی با آبزی‌پروری و تجربه‌های کشاورزی تلفیقی.</p>
-      </article>
+<section id="experience">
+  <h2>سوابق کاری</h2>
+  <div class="item">
+    <h3>کارگر استخر پرورش ماهی ـ شرکت نوید</h3>
+    <ul>
+      <li>فعالیت در امور روزمره استخر و پرورش ماهی</li>
+      <li>تغذیه و رسیدگی به ماهیان</li>
+      <li>جابجایی خوراک و کیسه‌های مواد غذایی</li>
+      <li>کار با تراکتور و انجام امور محوطه استخر</li>
+    </ul>
+    <p class="muted">دارای سابقه کاری چندساله در محیط پرورش آبزیان.</p>
+  </div>
+</section>
+
+<section id="education-docs">
+  <h2>مدارک تحصیلی</h2>
+  <p class="muted">
+    مدارک تحصیلی و عکس‌هایی که از بخش مدیریت اضافه می‌کنید
+    در این قسمت نمایش داده می‌شوند.
+  </p>
+  <div id="educationGallery" class="gallery">
+    <div class="empty">در حال دریافت عکس‌ها…</div>
+  </div>
+</section>
+
+<section id="certificates">
+  <h2>گواهی‌ها و دوره‌های آموزشی</h2>
+  <div class="gallery" id="certificatesGallery">
+
+    <figure class="photo">
+      <img src="govaahi-icdl.jpg" alt="گواهی ICDL" loading="lazy"
+           onerror="this.closest('figure').remove()">
+      <figcaption>گواهی ICDL</figcaption>
+    </figure>
+
+    <figure class="photo">
+      <img src="govaahi-komak-avaliyeh.jpg" alt="گواهی کمک‌های اولیه" loading="lazy"
+           onerror="this.closest('figure').remove()">
+      <figcaption>گواهی کمک‌های اولیه</figcaption>
+    </figure>
+
+    <figure class="photo">
+      <img src="govaahi-hamgam-ba-keshavarz.jpg" alt="گواهی همگام با کشاورز" loading="lazy"
+           onerror="this.closest('figure').remove()">
+      <figcaption>گواهی همگام با کشاورز</figcaption>
+    </figure>
+
+    <figure class="photo">
+      <img src="govaahi-padafand-gheyramel.jpg" alt="گواهی پدافند غیرعامل" loading="lazy"
+           onerror="this.closest('figure').remove()">
+      <figcaption>گواهی پدافند غیرعامل</figcaption>
+    </figure>
+
+  </div>
+</section>
+
+<section id="honors">
+  <h2>لوح‌های تقدیر و افتخارات</h2>
+  <div class="gallery" id="honorsGallery">
+
+    <figure class="photo">
+      <img src="lohe-abzi-parvari.jpg" alt="لوح آبزی‌پروری" loading="lazy"
+           onerror="this.closest('figure').remove()">
+      <figcaption>لوح آبزی‌پروری</figcaption>
+    </figure>
+
+    <figure class="photo">
+      <img src="lohe-jahad-keshavarzi.jpg" alt="لوح جهاد کشاورزی" loading="lazy"
+           onerror="this.closest('figure').remove()">
+      <figcaption>لوح جهاد کشاورزی</figcaption>
+    </figure>
+
+    <figure class="photo">
+      <img src="lohe-karafarin-nemuneh.jpg" alt="لوح کارآفرین نمونه" loading="lazy"
+           onerror="this.closest('figure').remove()">
+      <figcaption>لوح کارآفرین نمونه</figcaption>
+    </figure>
+
+  </div>
+</section>
+
+<section id="management">
+  <h2>مدیریت عکس‌ها 🔐</h2>
+  <p class="muted">
+    برای افزودن یا حذف عکس مدارک، گواهی‌ها و لوح‌ها وارد حساب مدیر شوید.
+    عکس‌های این سایت در پوشه‌های جداگانه mohammad ذخیره می‌شوند.
+  </p>
+
+  <div id="status" class="status info" role="status">
+    آماده اتصال به سامانه مدیریت عکس‌ها.
+  </div>
+
+  <div id="loginBox" class="admin-area">
+    <h3>ورود مدیر</h3>
+    <form id="loginForm">
+      <label for="email">ایمیل مدیر</label>
+      <input id="email" type="email" autocomplete="username"
+             value="m.ghorbani.pasikhani@gmail.com" required>
+
+      <label for="password">رمز عبور Supabase</label>
+      <input id="password" type="password"
+             autocomplete="current-password" required>
+
+      <button type="submit">ورود مدیر</button>
+    </form>
+  </div>
+
+  <div id="adminPanel" class="admin-area hidden">
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap">
+      <strong>پنل مدیریت عکس‌ها</strong>
+      <button type="button" class="secondary" id="logoutBtn">خروج مدیر</button>
     </div>
-  </section>
 
-  <section id="training">
-    <h2>دوره‌ها و گواهینامه‌های آموزشی</h2>
-    <div class="docs">
-      <figure>
-        <img src="govaahi-icdl.jpg" alt="گواهینامه مهارت فناوری اطلاعات ICDL درجه دو" loading="lazy">
-        <figcaption><strong>مهارت فناوری اطلاعات (ICDL درجه ۲)</strong><span>سازمان آموزش فنی و حرفه‌ای کشور</span></figcaption>
-      </figure>
-      <figure>
-        <img src="govaahi-komak-avaliyeh.jpg" alt="گواهی دوره آموزش عمومی کمک‌های اولیه" loading="lazy">
-        <figcaption><strong>کمک‌های اولیه و مراقبت‌های اولیه</strong><span>دوره آموزشی ۱۲۰ ساعته — رشت</span></figcaption>
-      </figure>
-      <figure>
-        <img src="govaahi-hamgam-ba-keshavarz.jpg" alt="گواهینامه طرح بسیج همگام با کشاورز" loading="lazy">
-        <figcaption><strong>طرح بسیج همگام با کشاورز</strong><span>دوره آموزشی — استان اردبیل، ۱۳۹۵</span></figcaption>
-      </figure>
-      <figure>
-        <img src="govaahi-padafand-gheyramel.jpg" alt="گواهینامه آموزشی پدافند غیرعامل" loading="lazy">
-        <figcaption><strong>پدافند غیرعامل</strong><span>دوره آموزشی بسیج — خرداد ۱۳۹۶</span></figcaption>
-      </figure>
-    </div>
-    <h3 style="margin-top:20px">گواهینامه‌های جدید</h3>
-    <div id="certificatesGallery" class="docs"></div>
-  </section>
+    <form id="uploadForm">
+      <div class="row">
+        <div>
+          <label for="category">دسته عکس</label>
+          <select id="category" required>
+            <option value="education">مدارک تحصیلی</option>
+            <option value="certificates">گواهی‌ها</option>
+            <option value="honors">لوح‌های تقدیر</option>
+          </select>
+        </div>
+        <div>
+          <label for="photoTitle">عنوان عکس (اختیاری)</label>
+          <input id="photoTitle" type="text" maxlength="90"
+                 placeholder="مثلاً مدرک کارشناسی شیلات">
+        </div>
+      </div>
 
-  <section id="honors">
-    <h2>افتخارات و لوح‌های تقدیر</h2>
-    <div class="docs">
-      <figure>
-        <img src="lohe-abzi-parvari.jpg" alt="لوح تقدیر فعالیت در مزرعه الگویی کشاورزی تلفیقی" loading="lazy">
-        <figcaption><strong>تقدیر بابت فعالیت در مزرعه الگویی کشاورزی تلفیقی</strong><span>راه‌اندازی مزرعه الگویی بر مبنای آبزی‌پروری</span></figcaption>
-      </figure>
-      <figure>
-        <img src="lohe-jahad-keshavarzi.jpg" alt="تقدیرنامه سازمان جهاد کشاورزی استان گیلان" loading="lazy">
-        <figcaption><strong>تقدیرنامه جهاد کشاورزی استان گیلان</strong><span>قدردانی از فعالیت‌ها و مشارکت حرفه‌ای</span></figcaption>
-      </figure>
-      <figure>
-        <img src="lohe-karafarin-nemuneh.jpg" alt="لوح تقدیر کارآفرین نمونه در کشاورزی تلفیقی" loading="lazy">
-        <figcaption><strong>کارآفرین نمونه</strong><span>تقدیر بابت فعالیت در محصولات باغی تلفیقی با آبزی‌پروری — ۱۳۹۶</span></figcaption>
-      </figure>
-    </div>
-    <h3 style="margin-top:20px">لوح‌های تقدیر جدید</h3>
-    <div id="honorsGallery" class="docs"></div>
-  </section>
+      <label for="photoFile">انتخاب عکس</label>
+      <input id="photoFile" type="file"
+             accept="image/jpeg,image/png,image/webp,image/gif,image/avif" required>
 
-  <section id="management">
-    <h2>مدیریت عکس‌ها</h2>
-    <p>این بخش برای افزودن و حذف عکس مدارک، گواهینامه‌ها و لوح‌های تقدیر است. ورود مدیر برای مدیریت تصاویر الزامی است.</p>
+      <button type="submit" id="uploadBtn">بارگذاری عکس</button>
+    </form>
 
-    <div id="loginBox" class="admin-box">
-      <h3>ورود مدیر سایت</h3>
-      <label for="adminEmail">ایمیل مدیر</label>
-      <input id="adminEmail" type="email" autocomplete="username"
-             placeholder="ایمیل حساب مدیر" inputmode="email">
-      <label for="adminPassword">رمز عبور</label>
-      <input id="adminPassword" type="password" autocomplete="current-password"
-             placeholder="رمز عبور Supabase">
-      <button id="loginBtn" class="btn" type="button">ورود مدیر</button>
-      <p id="loginStatus" class="status" role="status" aria-live="polite"></p>
-    </div>
+    <h3>عکس‌های بارگذاری‌شده</h3>
+    <p class="muted">برای حذف عکس، دکمه حذف زیر همان عکس را بزنید.</p>
+    <div id="adminGallery" class="gallery"></div>
+  </div>
+</section>
 
-    <div id="adminPanel" class="admin-box hidden">
-      <h3>پنل مدیریت تصاویر</h3>
-      <p id="signedInAs" class="small-note"></p>
-
-      <label for="photoCategory">دسته‌بندی عکس</label>
-      <select id="photoCategory">
-        <option value="education">مدارک تحصیلی</option>
-        <option value="certificates">گواهینامه‌ها و دوره‌ها</option>
-        <option value="honors">لوح‌های تقدیر و افتخارات</option>
-      </select>
-
-      <label for="photoTitle">عنوان عکس (اختیاری)</label>
-      <input id="photoTitle" type="text" maxlength="100"
-             placeholder="مثلاً گواهینامه کمک‌های اولیه">
-
-      <label for="photoFile">انتخاب عکس از گوشی</label>
-      <input id="photoFile" type="file" accept="image/*">
-
-      <button id="uploadBtn" class="btn" type="button">بارگذاری عکس</button>
-      <button id="refreshBtn" class="btn secondary" type="button">به‌روزرسانی عکس‌ها</button>
-      <button id="logoutBtn" class="btn secondary" type="button">خروج مدیر</button>
-
-      <p id="adminStatus" class="status" role="status" aria-live="polite"></p>
-      <hr style="border:0;border-top:1px solid var(--line);margin:20px 0">
-      <h3>عکس‌های قابل مدیریت</h3>
-      <p class="small-note">فقط عکس‌های پوشه‌های اختصاصی سایت شما در این فهرست نمایش داده می‌شوند.</p>
-      <div id="adminGallery" class="docs"></div>
-    </div>
-  </section>
 </main>
 
-<footer>
-  <p>محمد قربانی پسیخانی | صفحه شخصی و رزومه حرفه‌ای</p>
-</footer>
+<footer>وب‌سایت شخصی محمد قربانی پسیخانی</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
 (() => {
   "use strict";
 
-  // اطلاعات عمومی پروژه Supabase
   const SUPABASE_URL = "https://mdfvczwflgdcyboxylqk.supabase.co";
   const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_N2k7-2ni7AX1dxSD2GVaMA_gyZj2DDL";
   const BUCKET = "aminreza-photos";
   const ADMIN_EMAIL = "m.ghorbani.pasikhani@gmail.com";
+  const PREFIX = "mohammad";
 
-  // همه فایل‌های این سایت فقط در مسیر mohammad/ ذخیره می‌شوند.
   const CATEGORIES = {
-    education: { label: "مدارک تحصیلی", gallery: "educationGallery" },
-    certificates: { label: "گواهینامه‌ها", gallery: "certificatesGallery" },
-    honors: { label: "لوح‌های تقدیر", gallery: "honorsGallery" }
+    education: {
+      label: "مدارک تحصیلی",
+      publicId: "educationGallery"
+    },
+    certificates: {
+      label: "گواهی‌ها",
+      publicId: "certificatesGallery"
+    },
+    honors: {
+      label: "لوح‌های تقدیر",
+      publicId: "honorsGallery"
+    }
   };
 
   const $ = id => document.getElementById(id);
-  const loginBox = $("loginBox");
-  const adminPanel = $("adminPanel");
-  const loginStatus = $("loginStatus");
-  const adminStatus = $("adminStatus");
-
+  const statusBox = $("status");
   let db = null;
   let currentUser = null;
-  let busy = false;
 
-  function status(element, message, kind = "") {
-    element.textContent = message;
-    element.className = "status" + (kind ? " " + kind : "");
+  function setStatus(message, type = "info") {
+    statusBox.className = "status " + type;
+    statusBox.textContent = message;
   }
 
-  function safeName(name) {
-    return name.replace(/[^\w.\-()\u0600-\u06FF ]/g, "_").slice(0, 120);
+  function initClient() {
+    if (!window.supabase || !window.supabase.createClient) {
+      setStatus(
+        "کتابخانه Supabase بارگذاری نشد. اتصال اینترنت را بررسی کنید و صفحه را دوباره باز کنید.",
+        "err"
+      );
+      return false;
+    }
+
+    if (!SUPABASE_URL.startsWith("https://") ||
+        !SUPABASE_PUBLISHABLE_KEY ||
+        SUPABASE_PUBLISHABLE_KEY.includes("جای_کلید")) {
+      setStatus("آدرس یا کلید عمومی Supabase در کد تنظیم نشده است.", "err");
+      return false;
+    }
+
+    if (!db) {
+      db = window.supabase.createClient(
+        SUPABASE_URL,
+        SUPABASE_PUBLISHABLE_KEY,
+        {
+          auth: {
+            persistSession: true,
+            autoRefreshToken: true,
+            detectSessionInUrl: true
+          }
+        }
+      );
+    }
+
+    return true;
   }
 
-  function publicUrl(path) {
-    return db.storage.from(BUCKET).getPublicUrl(path).data.publicUrl;
+  function escapeHTML(value) {
+    return String(value).replace(/[&<>"']/g, char => ({
+      "&": "&amp;",
+      "<": "&lt;",
+      ">": "&gt;",
+      '"': "&quot;",
+      "'": "&#39;"
+    }[char]));
   }
 
-  function makeFigure(file, path, category, removable = false) {
-    const figure = document.createElement("figure");
-    figure.className = "online-card";
+  function titleFromName(name) {
+    let title = name.replace(/\.[^.]+$/, "");
+    title = title.replace(/^\d{10,}_/, "").replace(/_/g, " ");
+    return title || "عکس";
+  }
 
-    const img = document.createElement("img");
-    img.src = publicUrl(path);
-    img.alt = file.title || file.name || CATEGORIES[category].label;
-    img.loading = "lazy";
-    img.onerror = () => {
-      img.alt = "تصویر بارگذاری نشد";
-      img.style.minHeight = "100px";
+  function extensionOf(file) {
+    const match = (file.name || "").toLowerCase()
+      .match(/\.(jpe?g|png|webp|gif|avif)$/);
+
+    if (match) return match[1] === "jpeg" ? "jpg" : match[1];
+
+    const types = {
+      "image/jpeg": "jpg",
+      "image/png": "png",
+      "image/webp": "webp",
+      "image/gif": "gif",
+      "image/avif": "avif"
     };
 
-    const caption = document.createElement("figcaption");
-    const title = document.createElement("strong");
-    title.textContent = file.title || file.name || "تصویر";
-    const label = document.createElement("span");
-    label.textContent = CATEGORIES[category].label;
-    const filename = document.createElement("div");
-    filename.className = "file-name";
-    filename.textContent = file.name || "";
+    return types[file.type] || "";
+  }
 
-    caption.append(title, label, filename);
+  function safeFilename(value) {
+    return value.normalize("NFKC")
+      .trim()
+      .replace(/[\/\\:*?"<>|#%{}[\]^`]/g, "")
+      .replace(/\s+/g, "_")
+      .replace(/[. ]+$/g, "")
+      .slice(0, 90);
+  }
+
+  function imageURL(path) {
+    const result = db.storage.from(BUCKET).getPublicUrl(path);
+    return result.data && result.data.publicUrl
+      ? result.data.publicUrl
+      : "";
+  }
+
+  function makeFigure(file, category, admin = false) {
+    const path = PREFIX + "/" + category + "/" + file.name;
+    const title = titleFromName(file.name);
+
+    const figure = document.createElement("figure");
+    figure.className = "photo";
+
+    const img = document.createElement("img");
+    img.src = imageURL(path);
+    img.alt = title;
+    img.loading = "lazy";
+    img.onerror = () => figure.remove();
+
+    const caption = document.createElement("figcaption");
+    caption.textContent = title;
+
     figure.append(img, caption);
 
-    if (removable) {
-      const del = document.createElement("button");
-      del.type = "button";
-      del.className = "btn delete";
-      del.textContent = "حذف این عکس";
-      del.addEventListener("click", () => deletePhoto(path, figure));
-      figure.append(del);
+    if (admin) {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "danger small-btn";
+      button.textContent = "حذف عکس";
+      button.addEventListener("click", () => {
+        deletePhoto(path, category, figure);
+      });
+      caption.append(document.createElement("br"), button);
     }
+
     return figure;
   }
 
   async function listCategory(category) {
-    const folder = "mohammad/" + category;
+    const folder = PREFIX + "/" + category;
+
     const { data, error } = await db.storage.from(BUCKET).list(folder, {
       limit: 100,
       sortBy: { column: "created_at", order: "desc" }
     });
+
     if (error) throw error;
 
-    return (data || [])
-      .filter(file => file.name && file.name !== ".emptyFolderPlaceholder")
-      .filter(file => /\.(jpe?g|png|webp|gif|avif|heic)$/i.test(file.name))
-      .map(file => ({
-        ...file,
-        title: file.name.replace(/^\d+_/, "").replace(/\.[^.]+$/, "").replace(/_/g, " ")
-      }));
+    return (data || []).filter(file =>
+      file &&
+      file.name &&
+      /\.(jpe?g|png|webp|gif|avif)$/i.test(file.name)
+    );
   }
 
   async function refreshPublicGalleries() {
+    if (!initClient()) return;
+
     for (const [category, config] of Object.entries(CATEGORIES)) {
-      const target = $(config.gallery);
-      target.replaceChildren();
+      const target = $(config.publicId);
+      if (!target) continue;
+
+      target.querySelectorAll(".online-photo").forEach(el => el.remove());
+
       try {
         const files = await listCategory(category);
-        for (const file of files) {
-          const path = "mohammad/" + category + "/" + file.name;
-          target.append(makeFigure(file, path, category));
+        const emptyMessage = target.querySelector(".empty");
+
+        if (emptyMessage) emptyMessage.remove();
+
+        files.forEach(file => {
+          const figure = makeFigure(file, category, false);
+          figure.classList.add("online-photo");
+          target.appendChild(figure);
+        });
+
+        if (!target.querySelector(".photo") &&
+            !target.querySelector(".empty")) {
+          const empty = document.createElement("div");
+          empty.className = "empty";
+          empty.textContent = "هنوز عکسی در این بخش بارگذاری نشده است.";
+          target.appendChild(empty);
         }
       } catch (error) {
-        console.error("Gallery loading error:", category, error);
-        const note = document.createElement("p");
-        note.className = "small-note";
-        note.textContent = "نمایش عکس‌های آنلاین فعلاً ممکن نیست.";
-        target.append(note);
+        console.error("Gallery list error:", category, error);
+
+        const empty = target.querySelector(".empty");
+
+        if (empty) {
+          empty.textContent =
+            "دریافت عکس‌ها ممکن نشد؛ مجوز مشاهده فهرست فایل‌ها در Supabase را بررسی کنید.";
+        } else {
+          const note = document.createElement("div");
+          note.className = "empty";
+          note.textContent =
+            "دریافت عکس‌های آنلاین ممکن نشد؛ مجوزهای Storage در Supabase را بررسی کنید.";
+          target.appendChild(note);
+        }
       }
     }
   }
 
   async function refreshAdminGallery() {
     const target = $("adminGallery");
-    target.replaceChildren();
+    target.innerHTML = "";
+
+    let count = 0;
+    const errors = [];
 
     for (const [category, config] of Object.entries(CATEGORIES)) {
-      const heading = document.createElement("h3");
-      heading.style.gridColumn = "1 / -1";
-      heading.textContent = config.label;
-      target.append(heading);
+      try {
+        const files = await listCategory(category);
 
-      const files = await listCategory(category);
-      if (!files.length) {
-        const note = document.createElement("p");
-        note.className = "small-note";
-        note.textContent = "هنوز عکسی در این دسته بارگذاری نشده است.";
-        target.append(note);
-      }
+        if (files.length) {
+          const heading = document.createElement("div");
+          heading.style.gridColumn = "1 / -1";
 
-      for (const file of files) {
-        const path = "mohammad/" + category + "/" + file.name;
-        target.append(makeFigure(file, path, category, true));
+          const strong = document.createElement("strong");
+          strong.textContent = config.label;
+          heading.appendChild(strong);
+          target.appendChild(heading);
+
+          files.forEach(file => {
+            target.appendChild(makeFigure(file, category, true));
+            count++;
+          });
+        }
+      } catch (error) {
+        console.error("Admin list error:", category, error);
+        errors.push(config.label);
       }
     }
-  }
 
-  function setBusy(value) {
-    busy = value;
-    ["loginBtn", "uploadBtn", "refreshBtn", "logoutBtn"].forEach(id => {
-      $(id).disabled = value;
-    });
+    if (errors.length) {
+      setStatus(
+        "ورود انجام شد، اما فهرست عکس‌ها خوانده نشد. مجوز SELECT در Storage را بررسی کنید.",
+        "err"
+      );
+    } else if (!count) {
+      const empty = document.createElement("div");
+      empty.className = "empty";
+      empty.textContent = "در پوشه‌های مدیریت عکس هنوز فایلی پیدا نشد.";
+      target.appendChild(empty);
+    }
   }
 
   async function showAdmin(user) {
     currentUser = user;
-    loginBox.classList.add("hidden");
-    adminPanel.classList.remove("hidden");
-    $("signedInAs").textContent = "وارد شده‌اید با: " + user.email;
-    status(adminStatus, "در حال دریافت فهرست عکس‌ها...");
-    try {
-      await refreshPublicGalleries();
-      await refreshAdminGallery();
-      status(adminStatus, "ورود موفق بود. می‌توانید عکس‌ها را مدیریت کنید.", "success");
-    } catch (error) {
-      status(adminStatus, "ورود انجام شد، اما دریافت فهرست عکس‌ها ناموفق بود: " + error.message, "error");
-    }
+    $("loginBox").classList.add("hidden");
+    $("adminPanel").classList.remove("hidden");
+
+    setStatus("ورود موفق بود. در حال دریافت فهرست عکس‌ها…", "ok");
+
+    await refreshAdminGallery();
+    await refreshPublicGalleries();
   }
 
-  async function hideAdmin() {
-    currentUser = null;
-    adminPanel.classList.add("hidden");
-    loginBox.classList.remove("hidden");
-    $("adminPassword").value = "";
-    status(loginStatus, "از حساب مدیر خارج شدید.");
-  }
+  $("loginForm").addEventListener("submit", async event => {
+    event.preventDefault();
 
-  async function login() {
-    if (busy) return;
-    if (!db) {
-      status(loginStatus, "اتصال Supabase آماده نیست. اتصال اینترنت و تنظیمات را بررسی کنید.", "error");
+    if (!initClient()) return;
+
+    const email = $("email").value.trim();
+    const password = $("password").value;
+
+    if (email.toLowerCase() !== ADMIN_EMAIL.toLowerCase()) {
+      setStatus("لطفاً با ایمیل مدیر مجاز وارد شوید.", "err");
       return;
     }
 
-    const email = $("adminEmail").value.trim().toLowerCase();
-    const password = $("adminPassword").value;
+    const button = $("loginForm").querySelector('button[type="submit"]');
+    button.disabled = true;
+    button.textContent = "در حال ورود…";
 
-    if (!email || !password) {
-      status(loginStatus, "ایمیل و رمز عبور را وارد کنید.", "error");
-      return;
-    }
-    if (email !== ADMIN_EMAIL) {
-      status(loginStatus, "این ایمیل، ایمیل مدیر مجاز این سایت نیست.", "error");
-      return;
-    }
-
-    setBusy(true);
-    status(loginStatus, "در حال ورود...");
     try {
-      const { data, error } = await db.auth.signInWithPassword({ email, password });
+      const { data, error } = await db.auth.signInWithPassword({
+        email,
+        password
+      });
+
       if (error) throw error;
 
-      if (!data.user || data.user.email.toLowerCase() !== ADMIN_EMAIL) {
+      if (!data.user ||
+          (data.user.email || "").toLowerCase() !== ADMIN_EMAIL.toLowerCase()) {
         await db.auth.signOut();
-        throw new Error("حساب واردشده حساب مدیر مجاز نیست.");
+        throw new Error("این حساب، حساب مدیر مجاز نیست.");
       }
+
+      $("password").value = "";
       await showAdmin(data.user);
     } catch (error) {
-      status(loginStatus, "ورود ناموفق بود: " + error.message, "error");
+      console.error("Login error:", error);
+      setStatus(
+        "ورود ناموفق بود: " + (error.message || "خطای ناشناخته"),
+        "err"
+      );
     } finally {
-      setBusy(false);
+      button.disabled = false;
+      button.textContent = "ورود مدیر";
     }
-  }
+  });
 
-  async function uploadPhoto() {
-    if (busy || !currentUser) return;
-    const category = $("photoCategory").value;
+  $("logoutBtn").addEventListener("click", async () => {
+    if (!db) return;
+
+    const { error } = await db.auth.signOut();
+    if (error) console.error(error);
+
+    currentUser = null;
+    $("adminPanel").classList.add("hidden");
+    $("loginBox").classList.remove("hidden");
+
+    setStatus("از حساب مدیر خارج شدید.", "info");
+  });
+
+  $("uploadForm").addEventListener("submit", async event => {
+    event.preventDefault();
+
+    if (!db || !currentUser) {
+      setStatus("ابتدا با حساب مدیر وارد شوید.", "err");
+      return;
+    }
+
     const file = $("photoFile").files[0];
+    const category = $("category").value;
     const title = $("photoTitle").value.trim();
 
     if (!file) {
-      status(adminStatus, "ابتدا یک عکس از گوشی انتخاب کنید.", "error");
-      return;
-    }
-    if (!file.type.startsWith("image/")) {
-      status(adminStatus, "لطفاً یک فایل تصویری انتخاب کنید.", "error");
-      return;
-    }
-    if (file.size > 10 * 1024 * 1024) {
-      status(adminStatus, "حجم عکس باید کمتر از ۱۰ مگابایت باشد.", "error");
+      setStatus("ابتدا یک عکس انتخاب کنید.", "err");
       return;
     }
 
-    setBusy(true);
-    status(adminStatus, "در حال بارگذاری عکس...");
+    const extension = extensionOf(file);
+
+    if (!extension) {
+      setStatus(
+        "فقط عکس‌های JPG، PNG، WEBP، GIF و AVIF قابل قبول هستند.",
+        "err"
+      );
+      return;
+    }
+
+    if (file.size > 10 * 1024 * 1024) {
+      setStatus("حجم عکس باید کمتر از ۱۰ مگابایت باشد.", "err");
+      return;
+    }
+
+    const base = safeFilename(
+      title || file.name.replace(/\.[^.]+$/, "")
+    ) || "aks";
+
+    const filename = Date.now() + "_" + base + "." + extension;
+    const path = PREFIX + "/" + category + "/" + filename;
+
+    const button = $("uploadBtn");
+    button.disabled = true;
+    button.textContent = "در حال بارگذاری…";
+
+    setStatus(
+      "در حال بارگذاری عکس در بخش «" + CATEGORIES[category].label + "»…",
+      "info"
+    );
+
     try {
-      const clean = safeName(file.name || "photo.jpg");
-      const path = "mohammad/" + category + "/" + Date.now() + "_" + clean;
       const { error } = await db.storage.from(BUCKET).upload(path, file, {
         cacheControl: "3600",
         upsert: false,
-        contentType: file.type
+        contentType: file.type || ("image/" + extension)
       });
-      if (error) throw error;
 
-      // عنوان در نام فایل ذخیره می‌شود تا پس از بارگذاری هم قابل نمایش باشد.
-      // در صورت وارد کردن عنوان، نام فایل قابل خواندن‌تری ساخته می‌شود.
-      if (title) {
-        const newName = safeName(title).replace(/\s+/g, "_");
-        const renamedPath = "mohammad/" + category + "/" + Date.now() + "_" + newName +
-          (/\.[a-z0-9]+$/i.test(clean) ? clean.match(/\.[a-z0-9]+$/i)[0] : ".jpg");
-        const { error: copyError } = await db.storage.from(BUCKET).copy(path, renamedPath);
-        if (copyError) throw copyError;
-        const { error: removeError } = await db.storage.from(BUCKET).remove([path]);
-        if (removeError) throw removeError;
-      }
+      if (error) throw error;
 
       $("photoFile").value = "";
       $("photoTitle").value = "";
+
+      setStatus("عکس بارگذاری شد؛ در حال تازه‌سازی گالری…", "ok");
+
       await refreshPublicGalleries();
       await refreshAdminGallery();
-      status(adminStatus, "عکس با موفقیت بارگذاری شد.", "success");
-    } catch (error) {
-      status(adminStatus, "بارگذاری ناموفق بود: " + error.message, "error");
-    } finally {
-      setBusy(false);
-    }
-  }
 
-  async function deletePhoto(path, figure) {
-    if (!currentUser || busy) return;
-    if (!path.startsWith("mohammad/")) {
-      status(adminStatus, "برای امنیت، فقط عکس‌های پوشه سایت شما قابل حذف هستند.", "error");
+      setStatus("عکس با موفقیت بارگذاری شد.", "ok");
+    } catch (error) {
+      console.error("Upload error:", error);
+      setStatus(
+        "بارگذاری ناموفق بود: " +
+        (error.message || "خطای ناشناخته") +
+        "؛ مجوز INSERT و مسیر پوشه در Supabase را بررسی کنید.",
+        "err"
+      );
+    } finally {
+      button.disabled = false;
+      button.textContent = "بارگذاری عکس";
+    }
+  });
+
+  async function deletePhoto(path, category, figure) {
+    if (!currentUser) {
+      setStatus("ابتدا وارد حساب مدیر شوید.", "err");
       return;
     }
-    if (!confirm("آیا از حذف این عکس مطمئن هستید؟ این کار قابل بازگشت نیست.")) return;
 
-    setBusy(true);
-    status(adminStatus, "در حال حذف عکس...");
+    if (!path.startsWith(PREFIX + "/" + category + "/")) {
+      setStatus("مسیر فایل معتبر نیست؛ حذف لغو شد.", "err");
+      return;
+    }
+
+    if (!confirm("آیا مطمئن هستید که می‌خواهید این عکس را حذف کنید؟")) {
+      return;
+    }
+
     try {
       const { error } = await db.storage.from(BUCKET).remove([path]);
+
       if (error) throw error;
+
       figure.remove();
+      setStatus("عکس حذف شد.", "ok");
+
       await refreshPublicGalleries();
-      status(adminStatus, "عکس حذف شد.", "success");
+      await refreshAdminGallery();
     } catch (error) {
-      status(adminStatus, "حذف عکس انجام نشد: " + error.message, "error");
-    } finally {
-      setBusy(false);
+      console.error("Delete error:", error);
+      setStatus(
+        "حذف انجام نشد: " +
+        (error.message || "خطای ناشناخته") +
+        "؛ مجوز DELETE در Supabase را بررسی کنید.",
+        "err"
+      );
     }
   }
 
-  async function logout() {
-    if (!db) return;
-    setBusy(true);
+  async function restoreSession() {
+    if (!initClient()) return;
+
     try {
-      const { error } = await db.auth.signOut();
+      const { data, error } = await db.auth.getSession();
+
       if (error) throw error;
-      await hideAdmin();
-    } catch (error) {
-      status(adminStatus, "خروج انجام نشد: " + error.message, "error");
-    } finally {
-      setBusy(false);
-    }
-  }
 
-  async function init() {
-    if (!window.supabase || !window.supabase.createClient) {
-      status(loginStatus, "کتابخانه Supabase بارگذاری نشد. اتصال اینترنت را بررسی کنید.", "error");
-      return;
-    }
+      const user = data.session && data.session.user;
 
-    db = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
-
-    $("loginBtn").addEventListener("click", login);
-    $("uploadBtn").addEventListener("click", uploadPhoto);
-    $("refreshBtn").addEventListener("click", async () => {
-      if (!currentUser) return;
-      setBusy(true);
-      try {
+      if (user &&
+          (user.email || "").toLowerCase() === ADMIN_EMAIL.toLowerCase()) {
+        await showAdmin(user);
+      } else {
+        $("loginBox").classList.remove("hidden");
+        $("adminPanel").classList.add("hidden");
         await refreshPublicGalleries();
-        await refreshAdminGallery();
-        status(adminStatus, "فهرست عکس‌ها به‌روز شد.", "success");
-      } catch (error) {
-        status(adminStatus, "به‌روزرسانی ناموفق بود: " + error.message, "error");
-      } finally {
-        setBusy(false);
       }
-    });
-    $("logoutBtn").addEventListener("click", logout);
-    $("adminPassword").addEventListener("keydown", event => {
-      if (event.key === "Enter") login();
-    });
-
-    // نمایش عمومی عکس‌ها برای بازدیدکنندگان
-    await refreshPublicGalleries();
-
-    // اگر نشست مدیر هنوز معتبر است، پنل را بازیابی کن.
-    const { data } = await db.auth.getSession();
-    if (data.session && data.session.user &&
-        data.session.user.email.toLowerCase() === ADMIN_EMAIL) {
-      await showAdmin(data.session.user);
+    } catch (error) {
+      console.error("Session error:", error);
+      setStatus(
+        "بررسی ورود قبلی انجام نشد: " + (error.message || ""),
+        "err"
+      );
+      await refreshPublicGalleries();
     }
   }
 
-  init().catch(error => {
-    console.error(error);
-    status(loginStatus, "راه‌اندازی سایت کامل نشد: " + error.message, "error");
-  });
+  restoreSession();
 })();
 </script>
+
 </body>
 </html>
